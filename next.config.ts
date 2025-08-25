@@ -1,19 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-
-  reactStrictMode:true,
-  images:{
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'hiboy.com.au',
-        port: '',
-        pathname: '/wp-content/uploads/**',
-      },
-    ],
-  }
+  reactStrictMode: true,
+  images: {
+    domains: ["hiboy.com.au"],
+  },
 };
 
 export default nextConfig;
