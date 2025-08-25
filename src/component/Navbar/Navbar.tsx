@@ -12,11 +12,11 @@ function Navbar() {
     <div className={style.header}>
       <div className={style.nav}>
         <div className={style.navImg}>
-          <Image src="https://hiboy.com.au/wp-content/uploads/2025/06/hiboy.svg" alt="navimg" />
+          <Image src="https://hiboy.com.au/wp-content/uploads/2025/06/hiboy.svg" alt="navimg" width={100} height={100} />
         </div>
         <div className={style.navitem}>
           <ul>
-            <li><a href="/">Home</a></li>
+             <li><a href="/">Home</a></li>
             <li><a href="/">Electric Scooters</a></li>
             <li><a href="/">Electric Bikes</a></li>
             <li>
