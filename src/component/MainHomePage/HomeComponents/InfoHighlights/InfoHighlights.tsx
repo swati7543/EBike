@@ -36,7 +36,7 @@ const InfoHighlights = () => {
         <div className={styles.infoGrid}>
           {highlights.map((item, index) => (
             <div key={index} className={styles.infoItem}>
-              <Image src={item.img} alt={item.title} width={"100"}  height={"100"}/>
+              <img src={item.img} alt={item.title} width={"100"}  height={"100"}/>
               <h4>{item.title}</h4>
               <p>{item.desc}</p>
             </div>
