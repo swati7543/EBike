@@ -20,6 +20,7 @@ function Navbar() {
             <li><a href="/">Support</a></li>
           </ul>
         </div>
+        <h4>swati</h4>
         <div className={style.navInput}>
           <input type="text" placeholder="Search Bikes, Gear & Accessories" />
           <RiSearch2Line className={style.searchIcon} />
