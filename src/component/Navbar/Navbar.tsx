@@ -4,20 +4,22 @@ import { RiSearch2Line } from "react-icons/ri";
 import { FaUser } from "react-icons/fa6";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import Image from 'next/image';
+import Link from 'next/link';
 
 function Navbar() {
   return (
     <div className={style.header}>
       <div className={style.nav}>
         <div className={style.navImg}>
-          <img src="https://hiboy.com.au/wp-content/uploads/2025/06/hiboy.svg" alt="navimg" />
+          <Image src="https://hiboy.com.au/wp-content/uploads/2025/06/hiboy.svg" alt="navimg" />
         </div>
         <div className={style.navitem}>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Electric Scooters</a></li>
-            <li><a href="/">Electric Bikes</a></li>
-            <li><a href="/">Support</a></li>
+            <li><Link href="/">Electric Scooters</Link></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/">Electric Bikes</Link></li>
+            <li><Link href="/">Support</Link></li>
           </ul>
         </div>
         <h4>swati</h4>
