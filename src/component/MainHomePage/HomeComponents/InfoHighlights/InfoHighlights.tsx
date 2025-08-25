@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./infoHighlights.module.css";
 
 const InfoHighlights = () => {
@@ -35,7 +36,7 @@ const InfoHighlights = () => {
         <div className={styles.infoGrid}>
           {highlights.map((item, index) => (
             <div key={index} className={styles.infoItem}>
-              <img src={item.img} alt={item.title} />
+              <Image src={item.img} alt={item.title} />
               <h4>{item.title}</h4>
               <p>{item.desc}</p>
             </div>

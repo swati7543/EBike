@@ -4,13 +4,15 @@ import { RiSearch2Line } from "react-icons/ri";
 import { FaUser } from "react-icons/fa6";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import Image from 'next/image';
+import Link from 'next/link';
 
 function Navbar() {
   return (
     <div className={style.header}>
       <div className={style.nav}>
         <div className={style.navImg}>
-          <img src="https://hiboy.com.au/wp-content/uploads/2025/06/hiboy.svg" alt="navimg" />
+          <Image src="https://hiboy.com.au/wp-content/uploads/2025/06/hiboy.svg" alt="navimg" />
         </div>
         <div className={style.navitem}>
           <ul>
