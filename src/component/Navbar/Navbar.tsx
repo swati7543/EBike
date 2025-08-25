@@ -16,13 +16,13 @@ function Navbar() {
         </div>
         <div className={style.navitem}>
           <ul>
-             <li><a href="/">Home</a></li>
-            <li><a href="/">Electric Scooters</a></li>
-            <li><a href="/">Electric Bikes</a></li>
+             <li><Link href="/">Home</Link></li>
+            <li><Link href="/">Electric Scooters</Link></li>
+            <li><Link href="/">Electric Bikes</Link></li>
             <li>
-              <a href="/" className="navLink">
+              <Link href="/" className="navLink">
                 Support <MdOutlineArrowDropDown className='dropIcon' />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
