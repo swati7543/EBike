@@ -1,7 +1,84 @@
+/* Header Section */
 .header {
     font-size: 24px;
     font-weight: bold;
     padding: 20px;
-    background-color: var(--foreground);
-    color: var(--background);
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+/* Navigation Items */
+.navitem ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navitem ul li {
+    text-decoration: none;
+}
+
+.navitem ul li a {
+    text-decoration: none;
+    color: var(--foreground);
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.navitem ul li a:hover {
+    border-color: gray;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navInput {
+    width: 20rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 50px; /* pill shape */
+    background-color: #F3F3F3; /* light bg */
+    padding: 0 1.5rem;
+}
+
+.navInput input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+}
+
+.navInput .searchIcon {
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+}
+.navIcons {
+    display: flex;           /* flexbox lagao */
+    align-items: center;     /* vertical center */
+    gap: 1rem;             /* icons ke beech space */
+    font-size: 1.2rem;       /* icon size */
+    color: gray;             /* icon color */
+    cursor: pointer;
 }
