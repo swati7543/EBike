@@ -7,6 +7,10 @@
     color: var(--foreground);
     display: flex;
     justify-content: center;
+    flex-grow: 1;
+    position: 'sticky';
+    top: 0;
+    z-index: 1100;
 }
 
 /* Navigation Bar */
@@ -14,15 +18,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 88%;
 }
-
+.navImg{
+    margin-right: 5rem;
+}
 /* Navigation Items */
 .navitem ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -30,13 +36,17 @@
 
 .navitem ul li {
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .navitem ul li a {
     text-decoration: none;
-    color: var(--foreground);
-    font-size: 16px;
-    padding: 10px 15px;
+    /* color: var(--foreground); */
+    color: #444444;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 7px 22px;
     border-radius: 20px;
     border: 1px solid transparent;
     transition: all 0.3s ease;
@@ -54,9 +64,12 @@
     display: flex;
     align-items: center;
     border: 1px solid gray;
-    border-radius: 50px; /* pill shape */
-    background-color: #F3F3F3; /* light bg */
+    border-radius: 50px;
+    /* pill shape */
+    background-color: #F3F3F3;
+    /* light bg */
     padding: 0 1.5rem;
+    margin-left: 10rem;
 }
 
 .navInput input {
@@ -74,11 +87,17 @@
     color: gray;
     cursor: pointer;
 }
+
 .navIcons {
-    display: flex;           /* flexbox lagao */
-    align-items: center;     /* vertical center */
-    gap: 1rem;             /* icons ke beech space */
-    font-size: 1.2rem;       /* icon size */
-    color: gray;             /* icon color */
+    display: flex;
+    /* flexbox lagao */
+    align-items: center;
+    /* vertical center */
+    gap: 1rem;
+    /* icons ke beech space */
+    font-size: 1.2rem;
+    /* icon size */
+    color: gray;
+    /* icon color */
     cursor: pointer;
 }
