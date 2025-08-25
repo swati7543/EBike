@@ -20,15 +20,33 @@
     align-items: center;
     width: 88%;
 }
-.navImg{
-    margin-right: 5rem;
+
+.navImg {
+    margin-right: 4rem;
 }
+
 /* Navigation Items */
+.navLink {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: var(--foreground);
+    padding: 0.5rem 1rem;
+}
+.dropIcon {
+  font-size: 1.2rem;          /* icon size control */
+  line-height: 1;    
+  margin-top: 5px;         /* perfect centering */
+}
+
 .navitem ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -46,7 +64,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
-    padding: 7px 22px;
+    padding: 7px 20px;
     border-radius: 20px;
     border: 1px solid transparent;
     transition: all 0.3s ease;
@@ -69,7 +87,7 @@
     background-color: #F3F3F3;
     /* light bg */
     padding: 0 1.5rem;
-    margin-left: 10rem;
+    margin-left: 8rem;
 }
 
 .navInput input {
@@ -89,15 +107,11 @@
 }
 
 .navIcons {
+    /* width: 100%; */
     display: flex;
-    /* flexbox lagao */
     align-items: center;
-    /* vertical center */
-    gap: 1rem;
-    /* icons ke beech space */
+    /* gap: 0rem; */
     font-size: 1.2rem;
-    /* icon size */
-    color: gray;
-    /* icon color */
+    color: var(--foreground);
     cursor: pointer;
 }
