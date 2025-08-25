@@ -1,6 +1,126 @@
-.main{
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
+.footer {
+    margin-top: 40px;
+    margin:5px 100px;
+    /* top & bottom padding */
+    background: #fff;
+
+
+    font-family: "Noto Sans", sans-serif;
+    /* 🔹 font family */
+    font-size: 16px;
+    /* 🔹 base font size */
+}
+
+
+.footerBox {
+    background: #00497c;
+    border-radius: 30px;
+    padding: 60px 50px;
+    /* 🔹 increased padding */
+}
+
+
+
+.footerRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 50px;
+    /* 🔹 more space between columns */
+    color: #fff;
+}
+
+.footerCol {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    background: white !important;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-top: 10px;
+}
+
+.flags {
+    display: inline-flex;
+    gap: 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.list li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.list li a:hover {
+    color: #ccc;
+}
+
+/* Bottom Section */
+.bottom {
+    margin-top: 30px;
+    padding: 20px 40px;
+    /* 🔹 padding for breathing space */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+.company {
+    font-weight: 600;
+    color: #0e3b7d;
+    text-decoration: none;
+}
+
+.company:hover {
+    text-decoration: underline;
+}
+
+.payment {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .footerRow {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
 }
