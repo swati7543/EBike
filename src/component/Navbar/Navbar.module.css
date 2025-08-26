@@ -1,117 +1,193 @@
-/* Header Section */
+/* ========== Header Section ========== */
 .header {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 20px;
-    background-color: var(--background);
-    color: var(--foreground);
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    position: 'sticky';
-    top: 0;
-    z-index: 1100;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: var(--background);
+  color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1100;
+  height: 5rem;
 }
 
-/* Navigation Bar */
+/* ========== Navigation Bar ========== */
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
 }
 
 .navImg {
-    margin-right: 4rem;
+  /* margin-right: 3rem; */
+  margin-left: 1rem;
 }
 
-/* Navigation Items */
-.navLink {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 0.3rem;
-    text-decoration: none;
-    color: var(--foreground);
-    padding: 0.5rem 1rem;
-}
-.dropIcon {
-  font-size: 1.2rem;          /* icon size control */
-  line-height: 1;    
-  margin-top: 5px;         /* perfect centering */
+.navImg img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
 }
 
+/* ========== Navigation Items ========== */
 .navitem ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 1rem;
 }
 
 .navitem ul li {
-    text-decoration: none;
-    text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navitem ul li a {
-    text-decoration: none;
-    /* color: var(--foreground); */
-    color: #444444;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    padding: 7px 20px;
-    border-radius: 20px;
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-    display: inline-block;
+  text-decoration: none;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.navitem ul li a:hover {
-    border-color: gray;
-    background-color: rgba(255, 255, 255, 0.1);
+/* Top-Level Hover */
+.navitem>ul>li>a:hover {
+  border-color: gray;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* ========== Search Input ========== */
 .navInput {
-    width: 20rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    border: 1px solid gray;
-    border-radius: 50px;
-    /* pill shape */
-    background-color: #F3F3F3;
-    /* light bg */
-    padding: 0 1.5rem;
-    margin-left: 8rem;
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.334);
+  border-radius: 50px;
+  background-color: #F3F3F3;
+  padding: 0 1.5rem;
+  /* margin-left: 3rem; */
 }
 
 .navInput input {
-    flex: 1;
-    height: 100%;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 14px;
-    color: #333;
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
 }
 
 .navInput .searchIcon {
-    font-size: 24px;
-    color: gray;
-    cursor: pointer;
+  font-size: 24px;
+  color: gray;
+  cursor: pointer;
 }
 
+.navSearchIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1.5rem;
+}
+
+/* ========== Icons ========== */
 .navIcons {
-    /* width: 100%; */
-    display: flex;
-    align-items: center;
-    /* gap: 0rem; */
-    font-size: 1.2rem;
-    color: var(--foreground);
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+/* ========== Dropdown Menu ========== */
+
+.linkWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 20px 5px 20px !important;
+}
+
+.dropdownIcon {
+  position: relative;
+  top: 3px; 
+  font-size: 1.2em; 
+}
+
+
+/* Dropdown Container */
+.dropdown {
+  position: absolute;
+  top: 70%;
+  left: 51%;
+  transform: translateX(0%);
+  background: #fff;
+  border-radius: 6px;
+  min-width: 280px;
+  display: none !important;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  text-align: start;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+
+}
+
+.dropdownParent:hover .dropdown {
+  display: flex !important;
+}
+
+/* Dropdown Items */
+.dropdownItem {
+  padding: 15px 0;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+
+}
+
+/* Remove border-radius if inherited anywhere */
+.dropdownItem,
+.dropdownItem a {
+  border-radius: 0 !important;
+}
+
+/* Remove underline / unwanted styles */
+.dropdownItem a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+/* Hover Effect */
+.dropdownItem:hover {
+  /* background: #f9f9f9; */
+}
+
+.dropdownItem:hover a {
+  padding-left: 12px;
+  left: 0;
+  border-left: 4px solid #003366;
+  height: 100%;
+  color: #003366;
 }

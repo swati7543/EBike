@@ -46,7 +46,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
               src={img.src}
               alt={img.alt || `slide-${idx}`}
               width={400}
-              height={250}
+              height={400}
               className={styles.slideImage}
             />
           </div>

@@ -1,0 +1,85 @@
+
+/* section3 */
+.section3main {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 50px 40px 50px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.section3Heading{
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 5rem;
+}
+
+  
+.sliderContainer {
+    width: 95%;
+    height: 100%;
+    /* padding: 0 1rem; */
+}
+
+.slideItem {
+    /* padding: 0 0.5rem; */
+    height: 100%;
+    width: 100%;
+}
+.cardContent {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #E4F4F3;
+    width: 100%;
+    padding: 20px;
+    border-radius:  0 0 10px 10px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    /* padding: 10px 0; */
+    width: 90%;
+    /* box-shadow:  4px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+    border: 1px solid #ddd;
+    border-radius: 10px ;
+}
+
+.cardTitle {
+    font-size: 17.5px;
+    font-weight: 500;
+    color: #333;
+    margin: 5px 0 0 0;
+}
+.section3slideImage {
+    /* border-radius: 0.5rem; */
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px ;
+}
+
+/* Arrow buttons ko center align karne ke liye */
+.sliderContainer :global(.slick-prev),
+.sliderContainer :global(.slick-next) {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* Left arrow thoda left side */
+.sliderContainer :global(.slick-prev) {
+    left: -50px;
+}
+
+/* Right arrow thoda right side */
+.sliderContainer :global(.slick-next) {
+    right: -5px;
+}

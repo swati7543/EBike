@@ -1,0 +1,41 @@
+@keyframes border-transform {
+  0% {
+    border-top-left-radius: 49.3303% 52.4843%;
+    border-top-right-radius: 50.6697% 66.8281%;
+    border-bottom-left-radius: 63.3213% 47.5157%;
+    border-bottom-right-radius: 36.6787% 33.1719%;
+  }
+  50% {
+    border-top-left-radius: 60% 40%;
+    border-top-right-radius: 40% 60%;
+    border-bottom-left-radius: 35% 65%;
+    border-bottom-right-radius: 65% 35%;
+  }
+  100% {
+    border-top-left-radius: 49.3303% 52.4843%;
+    border-top-right-radius: 50.6697% 66.8281%;
+    border-bottom-left-radius: 63.3213% 47.5157%;
+    border-bottom-right-radius: 36.6787% 33.1719%;
+  }
+}
+
+.scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00497C;
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+
+  /* Animation apply */
+  animation: border-transform 6s ease-in-out infinite;
+  
+}

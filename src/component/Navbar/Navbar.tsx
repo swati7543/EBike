@@ -16,23 +16,53 @@ function Navbar() {
         </div>
         <div className={style.navitem}>
           <ul>
-             <li><Link href="/">Home</Link></li>
+            <li><Link href="/">Home</Link></li>
             <li><Link href="/">Electric Scooters</Link></li>
             <li><Link href="/">Electric Bikes</Link></li>
-            <li>
-              <Link href="/" className="navLink">
-                Support <MdOutlineArrowDropDown className='dropIcon' />
+            <li className={style.dropdownParent}>
+              <Link href="/" className={style.linkWrapper}>
+                Support
+                <span className={style.dropdownIcon}>
+                  <MdOutlineArrowDropDown />
+                </span>
               </Link>
+              <div className={style.dropdown}>
+                <div className={style.dropdownItem}>
+                  <Link href="/">Blog</Link>
+                </div>
+                <div className={style.dropdownItem}>
+                  <Link href="/">About Us</Link>
+                </div>
+                <div className={style.dropdownItem}>
+                  <Link href="/">Contact Us</Link>
+                </div>
+                <div className={style.dropdownItem}>
+                  <Link href="/">Shipping Policy</Link>
+                </div>
+                <div className={style.dropdownItem}>
+                  <Link href="/">Warranty Policy</Link>
+                </div>
+                <div className={style.dropdownItem}>
+                  <Link href="/">Privacy Policy</Link>
+                </div>
+                <div className={style.dropdownItem}>
+                  <Link href="/">Terms & Conditions</Link>
+                </div>
+              </div>
+
             </li>
           </ul>
         </div>
-        <div className={style.navInput}>
-          <input type="text" placeholder="Search Bikes, Gear & Accessories" />
-          <RiSearch2Line className={style.searchIcon} />
-        </div>
-        <div className={style.navIcons}>
-          <FaUser className='navIcons' style={{marginRight:'1rem'}}/>
-          <RiShoppingCart2Line className='navIcons' />
+        <div className={style.navSearchIcons}>
+          <div className={style.navInput}>
+            <input type="text" placeholder="Search Bikes, Gear & Accessories" />
+            <RiSearch2Line className={style.searchIcon} />
+          </div>
+          <div className={style.navIcons}>
+            <FaUser className='navIcons' style={{ marginRight: '1.5rem' }} />
+            <RiShoppingCart2Line className='navIcons' />
+          </div>
+
         </div>
       </div>
     </div>
